@@ -1,0 +1,15 @@
+C:\Users\6066300\source\repos\GlattReviews\GlattReviews.Application\bin\Debug\net5.0\GlattReviews.Application.deps.json
+C:\Users\6066300\source\repos\GlattReviews\GlattReviews.Application\bin\Debug\net5.0\GlattReviews.Application.dll
+C:\Users\6066300\source\repos\GlattReviews\GlattReviews.Application\bin\Debug\net5.0\ref\GlattReviews.Application.dll
+C:\Users\6066300\source\repos\GlattReviews\GlattReviews.Application\bin\Debug\net5.0\GlattReviews.Application.pdb
+C:\Users\6066300\source\repos\GlattReviews\GlattReviews.Application\bin\Debug\net5.0\GlattReviews.Domain.dll
+C:\Users\6066300\source\repos\GlattReviews\GlattReviews.Application\bin\Debug\net5.0\GlattReviews.Domain.pdb
+C:\Users\6066300\source\repos\GlattReviews\GlattReviews.Application\obj\Debug\net5.0\GlattReviews.Application.csprojAssemblyReference.cache
+C:\Users\6066300\source\repos\GlattReviews\GlattReviews.Application\obj\Debug\net5.0\GlattReviews.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\6066300\source\repos\GlattReviews\GlattReviews.Application\obj\Debug\net5.0\GlattReviews.Application.AssemblyInfoInputs.cache
+C:\Users\6066300\source\repos\GlattReviews\GlattReviews.Application\obj\Debug\net5.0\GlattReviews.Application.AssemblyInfo.cs
+C:\Users\6066300\source\repos\GlattReviews\GlattReviews.Application\obj\Debug\net5.0\GlattReviews.Application.csproj.CoreCompileInputs.cache
+C:\Users\6066300\source\repos\GlattReviews\GlattReviews.Application\obj\Debug\net5.0\GlattReviews.Application.csproj.CopyComplete
+C:\Users\6066300\source\repos\GlattReviews\GlattReviews.Application\obj\Debug\net5.0\GlattReviews.Application.dll
+C:\Users\6066300\source\repos\GlattReviews\GlattReviews.Application\obj\Debug\net5.0\ref\GlattReviews.Application.dll
+C:\Users\6066300\source\repos\GlattReviews\GlattReviews.Application\obj\Debug\net5.0\GlattReviews.Application.pdb

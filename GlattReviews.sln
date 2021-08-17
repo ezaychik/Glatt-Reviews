@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{70A1697C-8CDD-4FC2-9883-1446E691074D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{0CD9A3A5-82D7-4EEA-AD97-D588738CBBF6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{975AD170-D73E-42E1-89DB-1F1A6217ACEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlattReviews.Domain", "GlattReviews.Domain\GlattReviews.Domain.csproj", "{9CD568C1-6767-470E-AACD-D54AA1C66662}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlattReviews.Application", "GlattReviews.Application\GlattReviews.Application.csproj", "{E0E411AB-4F94-4ED9-AB61-6D5EB4706361}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9CD568C1-6767-470E-AACD-D54AA1C66662}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CD568C1-6767-470E-AACD-D54AA1C66662}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CD568C1-6767-470E-AACD-D54AA1C66662}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CD568C1-6767-470E-AACD-D54AA1C66662}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0E411AB-4F94-4ED9-AB61-6D5EB4706361}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0E411AB-4F94-4ED9-AB61-6D5EB4706361}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0E411AB-4F94-4ED9-AB61-6D5EB4706361}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0E411AB-4F94-4ED9-AB61-6D5EB4706361}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{975AD170-D73E-42E1-89DB-1F1A6217ACEE} = {70A1697C-8CDD-4FC2-9883-1446E691074D}
+		{9CD568C1-6767-470E-AACD-D54AA1C66662} = {975AD170-D73E-42E1-89DB-1F1A6217ACEE}
+		{E0E411AB-4F94-4ED9-AB61-6D5EB4706361} = {975AD170-D73E-42E1-89DB-1F1A6217ACEE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {46022E9A-6D3C-4100-8F49-42B3FA5CCAAC}
+	EndGlobalSection
+EndGlobal

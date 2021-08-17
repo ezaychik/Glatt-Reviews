@@ -1,0 +1,12 @@
+C:\Users\6066300\source\repos\GlattReviews\GlattReviews.Domain\bin\Debug\net5.0\GlattReviews.Domain.deps.json
+C:\Users\6066300\source\repos\GlattReviews\GlattReviews.Domain\bin\Debug\net5.0\GlattReviews.Domain.dll
+C:\Users\6066300\source\repos\GlattReviews\GlattReviews.Domain\bin\Debug\net5.0\ref\GlattReviews.Domain.dll
+C:\Users\6066300\source\repos\GlattReviews\GlattReviews.Domain\bin\Debug\net5.0\GlattReviews.Domain.pdb
+C:\Users\6066300\source\repos\GlattReviews\GlattReviews.Domain\obj\Debug\net5.0\GlattReviews.Domain.csprojAssemblyReference.cache
+C:\Users\6066300\source\repos\GlattReviews\GlattReviews.Domain\obj\Debug\net5.0\GlattReviews.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\6066300\source\repos\GlattReviews\GlattReviews.Domain\obj\Debug\net5.0\GlattReviews.Domain.AssemblyInfoInputs.cache
+C:\Users\6066300\source\repos\GlattReviews\GlattReviews.Domain\obj\Debug\net5.0\GlattReviews.Domain.AssemblyInfo.cs
+C:\Users\6066300\source\repos\GlattReviews\GlattReviews.Domain\obj\Debug\net5.0\GlattReviews.Domain.csproj.CoreCompileInputs.cache
+C:\Users\6066300\source\repos\GlattReviews\GlattReviews.Domain\obj\Debug\net5.0\GlattReviews.Domain.dll
+C:\Users\6066300\source\repos\GlattReviews\GlattReviews.Domain\obj\Debug\net5.0\ref\GlattReviews.Domain.dll
+C:\Users\6066300\source\repos\GlattReviews\GlattReviews.Domain\obj\Debug\net5.0\GlattReviews.Domain.pdb
