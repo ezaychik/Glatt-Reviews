@@ -9,7 +9,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{0CD9A3A5-8
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GlattReviews.Domain", "GlattReviews.Domain\GlattReviews.Domain.csproj", "{9CD568C1-6767-470E-AACD-D54AA1C66662}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlattReviews.API", "GlattReviews.Controllers\GlattReviews.API.csproj", "{D07588EB-463C-4D1C-86DA-AD1188C0EFD9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GlattReviews.API", "GlattReviews.Controllers\GlattReviews.API.csproj", "{D07588EB-463C-4D1C-86DA-AD1188C0EFD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlattReviews.Data", "GlattReviews.Data\GlattReviews.Data.csproj", "{5B2A7C8F-7426-4782-93BE-458677974559}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +27,10 @@ Global
 		{D07588EB-463C-4D1C-86DA-AD1188C0EFD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D07588EB-463C-4D1C-86DA-AD1188C0EFD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D07588EB-463C-4D1C-86DA-AD1188C0EFD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B2A7C8F-7426-4782-93BE-458677974559}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B2A7C8F-7426-4782-93BE-458677974559}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B2A7C8F-7426-4782-93BE-458677974559}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B2A7C8F-7426-4782-93BE-458677974559}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{9CD568C1-6767-470E-AACD-D54AA1C66662} = {70A1697C-8CDD-4FC2-9883-1446E691074D}
 		{D07588EB-463C-4D1C-86DA-AD1188C0EFD9} = {70A1697C-8CDD-4FC2-9883-1446E691074D}
+		{5B2A7C8F-7426-4782-93BE-458677974559} = {70A1697C-8CDD-4FC2-9883-1446E691074D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {46022E9A-6D3C-4100-8F49-42B3FA5CCAAC}
