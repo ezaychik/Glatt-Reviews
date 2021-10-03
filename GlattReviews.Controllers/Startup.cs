@@ -1,3 +1,5 @@
+using GlattReviews.Application.Repositories.DataAccess;
+using GlattReviews.Data.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -10,6 +12,7 @@ using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 
 namespace GlattReviews.Controllers
@@ -26,7 +29,10 @@ namespace GlattReviews.Controllers
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            services.AddScoped<IReviewsRepository, ReviewsRepository>();
+            services.AddScoped<IReviewersRepository, ReviewersRepository>();
+            services.AddScoped<IServiceProvidersRepository, ServiceProvidersRepository>();
+            services.AddAutoMapper(Assembly.GetExecutingAssembly());
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

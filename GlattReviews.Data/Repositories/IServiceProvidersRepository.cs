@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace GlattReviews.Application.Repositories.DataAccess
 {
-    public interface IReviewerRepository: IAsyncRepository<Reviewer>
+    public interface IServiceProvidersRepository: IAsyncRepository<ServiceProvider>
     {
     }
 }
