@@ -10,6 +10,6 @@ namespace GlattReviews.Domain.Entities
     {
         public int ReviewerId { get; set; }
         public Contact Contact { get; set; }
-        public ICollection<Review> Reviews { get; set; }
+        public List<Review> Reviews { get; set; }
     }
 }
