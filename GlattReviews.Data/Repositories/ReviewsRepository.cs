@@ -16,7 +16,7 @@ namespace GlattReviews.Data.Repositories
             new Review()
             {
                 ReviewId =1,
-                 Date = new DateTime(2021, 10, 22),
+                Date = new DateTime(2021, 10, 22),
                 Reviewer= new Reviewer()
                 {
                     ReviewerId = 1,
@@ -40,7 +40,7 @@ namespace GlattReviews.Data.Repositories
             new Review()
             {
                 ReviewId =2,
-                 Date = new DateTime(2021, 11, 22),
+                Date = new DateTime(2021, 11, 22),
                 Reviewer= new Reviewer()
                 {
                     ReviewerId = 2,

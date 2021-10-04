@@ -12,6 +12,6 @@ namespace GlattReviews.Domain.Entities
         public Contact Contact { get; set; }
         public string Name { get; set; }
         public string ServiceCategory { get; set; }
-        public ICollection<Review> Reviews { get; set; }
+        public List<Review> Reviews { get; set; }
     }
 }
