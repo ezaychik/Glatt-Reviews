@@ -88,9 +88,11 @@ namespace GlattReviews.Data.Repositories
             return Task.FromResult(entity);
         }
 
-        public Task DeleteAsync(Review entity)
+        public Task<bool> DeleteAsync(int id)
         {
-            throw new NotImplementedException();
+            var indexOfReview = _reviews.IndexOf(_reviews.Select(r => r).Where(r => r.ReviewId == id).FirstOrDefault());
+            _reviews.RemoveAt(indexOfReview);
+            return Task.FromResult(true);
         }
 
         public Task<IList<Review>> GetAllAsync()
@@ -148,9 +150,13 @@ namespace GlattReviews.Data.Repositories
             return Task.FromResult(reviews);
         }
 
-        public Task UpdateAsync(Review entity)
+        public Task<Review> UpdateAsync(Review entity)
         {
-            throw new NotImplementedException();
+            var indexOfReview = _reviews.IndexOf(_reviews.Select(r => r).Where(r => r.ReviewId == entity.ReviewId).FirstOrDefault());
+
+            _reviews[indexOfReview] = entity;
+            return Task.FromResult(entity);
+
         }
     }
 }

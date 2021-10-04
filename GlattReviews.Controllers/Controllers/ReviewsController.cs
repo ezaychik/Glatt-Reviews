@@ -88,11 +88,13 @@ namespace GlattReviews.API.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, "Database Failure");
             }
         }
-        [HttpPost()]
+        [HttpPost]
         public async Task<ActionResult<ReviewModel>> CreateReview(ReviewModel newReview)
         {
             try
             {
+                if (newReview == null)
+                    return BadRequest("Please check model.");
 
                 var newReviewMapped = _mapper.Map<Review>(newReview);
                 var review = await _reviewsRepository.AddAsync(newReviewMapped);
@@ -100,6 +102,63 @@ namespace GlattReviews.API.Controllers
                 {
                     var location = _linkGenerator.GetPathByAction("Get", "Reviews", new { id = review.ReviewId });
                     return Created(location, _mapper.Map<ReviewModel>(review));
+                }
+
+                return BadRequest();
+            }
+            catch (Exception ex)
+            {
+
+                return StatusCode(StatusCodes.Status500InternalServerError, "Database Failure");
+            }
+        }
+        [HttpPut("{id}")]
+        public async Task<ActionResult<ReviewModel>> UpdateReview(int id, ReviewModel reviewToUpdate)
+        {
+            try
+            {
+                if (reviewToUpdate == null)
+                    return BadRequest("Please check model.");
+
+                var oldReview = await _reviewsRepository.GetByIdAsync(id);
+                if (oldReview == null)
+                {
+                    return NotFound("Review does not exist.");
+                }
+
+                _mapper.Map(reviewToUpdate, oldReview);
+
+                var updatedReview = await _reviewsRepository.UpdateAsync(oldReview);
+                if (updatedReview != null)
+                {
+                    return _mapper.Map<ReviewModel>(updatedReview);
+                }
+
+                return BadRequest();
+            }
+            catch (Exception ex)
+            {
+
+                return StatusCode(StatusCodes.Status500InternalServerError, "Database Failure");
+            }
+        }
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<ReviewModel>> DeleteReview(int id)
+        {
+            try
+            {
+
+                var oldReview = await _reviewsRepository.GetByIdAsync(id);
+                if (oldReview == null)
+                {
+                    return NotFound("Review does not exist.");
+                }
+
+
+                var deleteSuccesful = await _reviewsRepository.DeleteAsync(id);
+                if (deleteSuccesful == true)
+                {
+                    return Ok();
                 }
 
                 return BadRequest();

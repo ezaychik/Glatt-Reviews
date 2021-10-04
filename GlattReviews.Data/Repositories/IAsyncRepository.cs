@@ -11,7 +11,7 @@ namespace GlattReviews.Application.Repositories.DataAccess
         Task<T> GetByIdAsync(int id);
         Task<IList<T>> GetAllAsync();
         Task<T> AddAsync(T entity);
-        Task UpdateAsync(T entity);
-        Task DeleteAsync(T entity);
+        Task<T> UpdateAsync(T entity);
+        Task<bool> DeleteAsync(int id);
     }
 }

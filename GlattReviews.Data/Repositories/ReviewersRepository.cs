@@ -15,7 +15,7 @@ namespace GlattReviews.Data.Repositories
             throw new NotImplementedException();
         }
 
-        public Task DeleteAsync(Reviewer entity)
+        public Task<bool> DeleteAsync(int id)
         {
             throw new NotImplementedException();
         }
@@ -30,7 +30,7 @@ namespace GlattReviews.Data.Repositories
             throw new NotImplementedException();
         }
 
-        public Task UpdateAsync(Reviewer entity)
+        public Task<Reviewer> UpdateAsync(Reviewer entity)
         {
             throw new NotImplementedException();
         }
