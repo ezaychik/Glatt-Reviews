@@ -28,6 +28,11 @@ namespace GlattReviews.Data.Repositories
             throw new NotImplementedException();
         }
 
+        public Task<List<ServiceProvider>> GetServiceProviders(int phoneNumber = 0, string email = null, string name = null, string serviceType = null)
+        {
+            throw new NotImplementedException();
+        }
+
         public Task<ServiceProvider> UpdateAsync(ServiceProvider entity)
         {
             throw new NotImplementedException();
