@@ -17,13 +17,10 @@ namespace GlattReviews.API.Controllers
     {
         private readonly IReviewersRepository _reviewersRepository;
         private readonly IMapper _mapper;
-        private readonly LinkGenerator _linkGenerator;
-
-        public ReviewersController(IReviewersRepository reviewersRepository, IMapper mapper, LinkGenerator linkGenerator)
+        public ReviewersController(IReviewersRepository reviewersRepository, IMapper mapper)
         {
             _reviewersRepository = reviewersRepository;
             _mapper = mapper;
-            _linkGenerator = linkGenerator;
         }
 
         [HttpGet("{id}")]
