@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace GlattReviews.Domain.Entities
 {
-    public class Reviewer
+    public class Contact
     {
-        public int ReviewerId { get; set; }
-        public Contact Contact { get; set; }
-        public ICollection<Review> Reviews { get; set; }
+        public string Email { get; set; }
+        public int PhoneNumber { get; set; }
     }
 }
