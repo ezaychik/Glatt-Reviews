@@ -10,5 +10,6 @@ namespace GlattReviews.Application.Repositories.DataAccess
     public interface IReviewersRepository : IAsyncRepository<Reviewer>
     {
         Task<List<Reviewer>> GetReviewers(int phoneNumber = 0, string email = null);
+        Task<List<Review>> GetReviewsById(int id);
     }
 }

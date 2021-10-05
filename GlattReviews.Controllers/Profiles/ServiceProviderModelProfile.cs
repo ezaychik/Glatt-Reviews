@@ -8,11 +8,12 @@ using System.Threading.Tasks;
 
 namespace GlattReviews.API.Profiles
 {
-    public class ServiceProviderModelProfile: Profile
+    public class ServiceProviderModelProfile : Profile
     {
         public ServiceProviderModelProfile()
         {
-            CreateMap<ServiceProvider, ServiceProvideModel>();
+            CreateMap<ServiceProvider, ServiceProvideModel>()
+                .ForMember(sp => sp.Reviews, opt => opt.Ignore());
         }
     }
 }
