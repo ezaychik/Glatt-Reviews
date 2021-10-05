@@ -61,5 +61,24 @@ namespace GlattReviews.API.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, "Database Failure");
             }
         }
+        [HttpGet("{id}/reviews")]
+        public async Task<ActionResult<List<ReviewModel>>> GetReviewsByReviewer(int id)
+        {
+            try
+            {
+                var results = await _reviewersRepository.GetReviewsById(id);
+
+                if (results.Count < 1)
+                    return NotFound("Search criteria did not return any results.");
+
+                return _mapper.Map<List<ReviewModel>>(results);
+
+            }
+            catch (Exception ex)
+            {
+
+                return StatusCode(StatusCodes.Status500InternalServerError, "Database Failure");
+            }
+        }
     }
 }

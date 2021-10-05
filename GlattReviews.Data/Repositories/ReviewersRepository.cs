@@ -217,7 +217,13 @@ namespace GlattReviews.Data.Repositories
             else
                 return Task.FromResult(_reviewers.Select(r => r).Where(r => r.Contact.Email == email || r.Contact.PhoneNumber == phoneNumber).ToList());
         }
-        
+
+        public Task<List<Review>> GetReviewsById(int id)
+        {
+            var reviews = _reviewers.Where(r => r.ReviewerId == id).Select(q => q.Reviews).FirstOrDefault();
+            return Task.FromResult(reviews);
+        }
+
         public Task<Reviewer> UpdateAsync(Reviewer entity)
         {
             throw new NotImplementedException();

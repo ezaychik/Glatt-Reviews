@@ -12,7 +12,8 @@ namespace GlattReviews.API.Profiles
     {
         public ReviewerModelProfile()
         {
-            CreateMap<Reviewer, ReviewerModel>();
+            CreateMap<Reviewer, ReviewerModel>().
+                ForMember(r => r.Reviews, opt => opt.Ignore());
         }
     }
 }
