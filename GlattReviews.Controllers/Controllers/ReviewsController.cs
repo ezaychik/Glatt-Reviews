@@ -25,23 +25,6 @@ namespace GlattReviews.API.Controllers
             _mapper = mapper;
             _linkGenerator = linkGenerator;
         }
-
-
-        [HttpGet]
-        public async Task<ActionResult<List<ReviewModel>>> GetAllReviews()
-        {
-            try
-            {
-                var results = await _reviewsRepository.GetAllAsync();
-                return _mapper.Map<List<ReviewModel>>(results);
-
-            }
-            catch (Exception ex)
-            {
-
-                return StatusCode(StatusCodes.Status500InternalServerError, "Database Failure");
-            }
-        }
         [HttpGet("{id}")]
         public async Task<ActionResult<ReviewModel>> GetReview(int id)
         {
@@ -60,25 +43,17 @@ namespace GlattReviews.API.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, "Database Failure");
             }
         }
-        [HttpGet("search")]
+        [HttpGet]
         public async Task<ActionResult<List<ReviewModel>>> GetReviews([FromQuery] string date = null, [FromQuery] string serviceProviderName = null, [FromQuery] string serviceType = null)
         {
             try
             {
-                if (date == null && serviceType == null && serviceProviderName == null)
-                {
-                    var allResults = await _reviewsRepository.GetAllAsync();
-                    return _mapper.Map<List<ReviewModel>>(allResults);
-                }
-                else
-                {
-                    var results = await _reviewsRepository.GetReviewsByInputs(date, serviceProviderName, serviceType);
+                var results = await _reviewsRepository.GetReviews(date, serviceProviderName, serviceType);
 
-                    if (results.Count < 1)
-                        return NotFound("Search criteria did not return any results.");
+                if (results.Count < 1)
+                    return NotFound("Search criteria did not return any results.");
 
-                    return _mapper.Map<List<ReviewModel>>(results);
-                }
+                return _mapper.Map<List<ReviewModel>>(results);
 
 
             }

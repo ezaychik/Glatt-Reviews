@@ -113,7 +113,7 @@ namespace GlattReviews.Data.Repositories
             return Task.FromResult(reviews);
         }
 
-        public Task<List<Review>> GetReviewsByInputs(string date = null, string serviceProviderName = null, string serviceType = null)
+        public Task<List<Review>> GetReviews(string date = null, string serviceProviderName = null, string serviceType = null)
         {
             //Dictionary<string, object> queryParams = new Dictionary<string, object>();
             //if (date != null)
@@ -134,6 +134,10 @@ namespace GlattReviews.Data.Repositories
             //{
             //    queryParams.Add("serviceType", serviceType);
             //}
+            if (date == null && serviceProviderName == null && serviceType == null)
+            {
+                return Task.FromResult(_reviews.ToList());
+            }
             return Task.FromResult(_reviews.ToList());
         }
 

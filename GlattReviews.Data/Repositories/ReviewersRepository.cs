@@ -77,7 +77,7 @@ namespace GlattReviews.Data.Repositories
             },
             new Reviewer()
             {
-                ReviewerId = 1,
+                ReviewerId = 2,
                 Contact = new Contact()
                 {
                     PhoneNumber = 7894561230,
@@ -131,7 +131,7 @@ namespace GlattReviews.Data.Repositories
             },
             new Reviewer()
             {
-                ReviewerId = 1,
+                ReviewerId = 3,
                 Contact = new Contact()
                 {
                     PhoneNumber = 9998887776,
@@ -182,8 +182,7 @@ namespace GlattReviews.Data.Repositories
                         }
                     }
                 }
-            },
-
+            }
         };
         public Task<Reviewer> AddAsync(Reviewer entity)
         {
