@@ -9,7 +9,6 @@ namespace GlattReviews.Application.Repositories.DataAccess
     public interface IAsyncRepository<T> where T : class
     {
         Task<T> GetByIdAsync(int id);
-        Task<IList<T>> GetAllAsync();
         Task<T> AddAsync(T entity);
         Task<T> UpdateAsync(T entity);
         Task<bool> DeleteAsync(int id);
