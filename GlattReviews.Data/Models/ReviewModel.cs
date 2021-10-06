@@ -13,12 +13,10 @@ namespace GlattReviews.Data.Models
         public int Id { get; set; }
         public DateTime Date { get; set; }
         [Required]
-        public string ServiceProviderName { get; set; }
-        [Required]
-        public Contact ServiceProviderContact { get; set; }
+        public ServiceProvider ServiceProvider { get; set; }
         [Required]
         public string ServiceType { get; set; }
         [Required]
-        public Contact ReviewerContact { get; set; }
+        public Reviewer Reviewer { get; set; }
     }
 }

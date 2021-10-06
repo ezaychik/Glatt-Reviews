@@ -9,7 +9,9 @@ namespace GlattReviews.Domain.Entities
     public class Reviewer
     {
         public int ReviewerId { get; set; }
-        public Contact Contact { get; set; }
+        public string Email { get; set; }
+        public long PhoneNumber { get; set; }
+        public string Name { get; set; }
         public List<Review> Reviews { get; set; }
     }
 }
