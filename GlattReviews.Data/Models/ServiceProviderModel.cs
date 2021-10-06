@@ -13,7 +13,7 @@ namespace GlattReviews.Data.Models
         public string Email { get; set; }
         public long PhoneNumber { get; set; }
         public string Name { get; set; }
-        public string ServiceCategory { get; set; }
+        public string ServiceType { get; set; }
         public List<ReviewModel> Reviews { get; set; }
     }
 }

@@ -9,7 +9,6 @@ namespace GlattReviews.Data.Profiles
         public ReviewModelProfile()
         {
             CreateMap<Review, ReviewModel>()
-                .ForMember(r => r.ServiceProvider, o => o.MapFrom(m => m.ServiceProvider.Name))
                 .ForPath(r => r.Reviewer.Email, o => o.MapFrom(m => m.Reviewer.Email))
                 .ForPath(r => r.Reviewer.PhoneNumber, o => o.MapFrom(m => m.Reviewer.PhoneNumber))
                 .ForPath(r => r.Reviewer.Name, o => o.MapFrom(m => m.Reviewer.Name))

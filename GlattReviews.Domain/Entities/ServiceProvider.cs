@@ -12,7 +12,7 @@ namespace GlattReviews.Domain.Entities
         public string Email { get; set; }
         public long PhoneNumber { get; set; }
         public string Name { get; set; }
-        public string ServiceCategory { get; set; }
+        public string ServiceType { get; set; }
         public List<Review> Reviews { get; set; }
     }
 }
