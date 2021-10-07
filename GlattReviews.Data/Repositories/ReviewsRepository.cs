@@ -20,19 +20,14 @@ namespace GlattReviews.Data.Repositories
                 Reviewer= new Reviewer()
                 {
                     ReviewerId = 1,
-                    Contact = new Contact()
-                    {
-                        Email = "email@email.email",
-                    }
+                    Email = "email@email.email"
 
                 },
                 ServiceProvider = new ServiceProvider()
                 {
                     Name = "Joe",
-                    Contact = new Contact()
-                    {
-                        Email = "joe@email.email",
-                    }
+                    Email = "joe@email.email",
+                    
                 },
                 ServiceType = "Legal",
 
@@ -44,19 +39,15 @@ namespace GlattReviews.Data.Repositories
                 Reviewer= new Reviewer()
                 {
                     ReviewerId = 2,
-                    Contact = new Contact()
-                    {
-                        Email = "email@email.email",
-                    }
+                    Email = "email@email.email"
+                    
                 },
                 ServiceType = "Plumbing",
                 ServiceProvider = new ServiceProvider()
                 {
                     Name = "Steve",
-                    Contact = new Contact()
-                    {
-                        Email = "steve@email.email",
-                    }
+                    Email = "steve@email.email"
+                    
                 }
             },
             new Review()
@@ -66,19 +57,13 @@ namespace GlattReviews.Data.Repositories
                 Reviewer= new Reviewer()
                 {
                     ReviewerId = 3,
-                    Contact = new Contact()
-                    {
-                        Email = "email@email.email",
-                    }
+                    Email = "email@email.email"
                 },
                 ServiceType = "Electric",
                 ServiceProvider = new ServiceProvider()
                 {
                     Name = "Bob",
-                    Contact = new Contact()
-                    {
-                        Email = "bob@email.email",
-                    }
+                    Email = "bob@email.email"
                 }
             }
         };

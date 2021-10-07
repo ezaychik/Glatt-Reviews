@@ -15,11 +15,9 @@ namespace GlattReviews.Data.Repositories
             new Reviewer()
             {
                 ReviewerId = 1,
-                Contact = new Contact()
-                {
-                    PhoneNumber = 0123456789,
-                    Email = "phil@email.email"
-                },
+                PhoneNumber = 0123456789,
+                Email = "phil@email.email",
+
                 Reviews = new List<Review>()
                 {
                     new Review()
@@ -29,10 +27,7 @@ namespace GlattReviews.Data.Repositories
                         ServiceProvider = new ServiceProvider()
                         {
                             Name = "Joe",
-                            Contact = new Contact()
-                            {
-                                Email = "joe@email.email",
-                            }
+                            Email = "joe@email.email"
                         },
                         ServiceType = "Legal",
                     },
@@ -43,20 +38,14 @@ namespace GlattReviews.Data.Repositories
                         Reviewer = new Reviewer()
                         {
                             ReviewerId = 1,
-                            Contact = new Contact()
-                            {
-                                PhoneNumber = 0123456789,
-                                Email = "phil@email.email"
-                            },
+                            PhoneNumber = 0123456789,
+                            Email = "phil@email.email"
                         },
                         ServiceType = "Plumbing",
                         ServiceProvider = new ServiceProvider()
                         {
                             Name = "Steve",
-                            Contact = new Contact()
-                            {
-                                Email = "steve@email.email",
-                            }
+                            Email = "steve@email.email"
                         }
                     },
                     new Review()
@@ -67,10 +56,7 @@ namespace GlattReviews.Data.Repositories
                         ServiceProvider = new ServiceProvider()
                         {
                             Name = "Bob",
-                            Contact = new Contact()
-                            {
-                                Email = "bob@email.email",
-                            }
+                            Email = "bob@email.email",
                         }
                     }
                 }
@@ -78,11 +64,8 @@ namespace GlattReviews.Data.Repositories
             new Reviewer()
             {
                 ReviewerId = 2,
-                Contact = new Contact()
-                {
-                    PhoneNumber = 7894561230,
-                    Email = "bill@email.email"
-                },
+                PhoneNumber = 7894561230,
+                Email = "bill@email.email",
                 Reviews = new List<Review>()
                 {
                     new Review()
@@ -92,10 +75,8 @@ namespace GlattReviews.Data.Repositories
                         ServiceProvider = new ServiceProvider()
                         {
                             Name = "Joe",
-                            Contact = new Contact()
-                            {
-                                Email = "joe@email.email",
-                            }
+                            Email = "joe@email.email",
+
                         },
                         ServiceType = "Legal",
                     },
@@ -107,10 +88,8 @@ namespace GlattReviews.Data.Repositories
                         ServiceProvider = new ServiceProvider()
                         {
                             Name = "Steve",
-                            Contact = new Contact()
-                            {
-                                Email = "steve@email.email",
-                            }
+                            Email = "steve@email.email"
+
                         }
                     },
                     new Review()
@@ -121,10 +100,8 @@ namespace GlattReviews.Data.Repositories
                         ServiceProvider = new ServiceProvider()
                         {
                             Name = "Bob",
-                            Contact = new Contact()
-                            {
-                                Email = "bob@email.email",
-                            }
+                            Email = "bob@email.email"
+
                         }
                     }
                 }
@@ -132,11 +109,8 @@ namespace GlattReviews.Data.Repositories
             new Reviewer()
             {
                 ReviewerId = 3,
-                Contact = new Contact()
-                {
-                    PhoneNumber = 9998887776,
-                    Email = "jill@email.email"
-                },
+                PhoneNumber = 9998887776,
+                Email = "jill@email.email",
                 Reviews = new List<Review>()
                 {
                     new Review()
@@ -146,10 +120,8 @@ namespace GlattReviews.Data.Repositories
                         ServiceProvider = new ServiceProvider()
                         {
                             Name = "Joe",
-                            Contact = new Contact()
-                            {
-                                Email = "joe@email.email",
-                            }
+                            Email = "joe@email.email",
+
                         },
                         ServiceType = "Legal",
                     },
@@ -161,10 +133,8 @@ namespace GlattReviews.Data.Repositories
                         ServiceProvider = new ServiceProvider()
                         {
                             Name = "Steve",
-                            Contact = new Contact()
-                            {
-                                Email = "steve@email.email",
-                            }
+                            Email = "steve@email.email"
+
                         }
                     },
                     new Review()
@@ -175,10 +145,7 @@ namespace GlattReviews.Data.Repositories
                         ServiceProvider = new ServiceProvider()
                         {
                             Name = "Bob",
-                            Contact = new Contact()
-                            {
-                                Email = "bob@email.email",
-                            }
+                            Email = "bob@email.email"
                         }
                     }
                 }
@@ -214,7 +181,7 @@ namespace GlattReviews.Data.Repositories
                 return Task.FromResult(allReviewers.ToList());
             }
             else
-                return Task.FromResult(_reviewers.Select(r => r).Where(r => r.Contact.Email == email || r.Contact.PhoneNumber == phoneNumber).ToList());
+                return Task.FromResult(_reviewers.Select(r => r).Where(r => r.Email == email || r.PhoneNumber == phoneNumber).ToList());
         }
 
         public Task<List<Review>> GetReviewsById(int id)
