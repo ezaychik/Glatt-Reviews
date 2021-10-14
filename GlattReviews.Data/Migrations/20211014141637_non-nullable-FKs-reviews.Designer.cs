@@ -4,14 +4,16 @@ using GlattReviews.Data.Database;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace GlattReviews.Data.Migrations
 {
     [DbContext(typeof(ReviewsContext))]
-    partial class ReviewsContextModelSnapshot : ModelSnapshot
+    [Migration("20211014141637_non-nullable-FKs-reviews")]
+    partial class nonnullableFKsreviews
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

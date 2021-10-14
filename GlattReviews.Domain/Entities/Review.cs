@@ -11,7 +11,9 @@ namespace GlattReviews.Domain.Entities
         public int ReviewId { get; set; }
         public DateTime Date { get; set; }
         public ServiceProvider ServiceProvider { get; set; }
+        public int ServiceProviderId { get; set; }
         public string ServiceType { get; set; }
         public Reviewer Reviewer { get; set; }
+        public int ReviewerId { get; set; }
     }
 }

@@ -15,7 +15,9 @@ namespace GlattReviews.Data.Profiles
                 .ForPath(r => r.Reviewer.Reviews, o => o.Ignore())
                 .ForPath(r => r.ServiceProvider.Email, o => o.MapFrom(m => m.ServiceProvider.Email))
                 .ForPath(r => r.ServiceProvider.PhoneNumber, o => o.MapFrom(m => m.ServiceProvider.PhoneNumber))
-                .ForPath(r => r.ServiceProvider.Reviews, o => o.Ignore()
+                .ForPath(r => r.ServiceProvider.Reviews, o => o.Ignore())
+                .ForSourceMember(r => r.ReviewerId, rm=>rm.DoNotValidate())
+                .ForSourceMember(r => r.ServiceProviderId, rm => rm.DoNotValidate()
                 );
         }
     }
